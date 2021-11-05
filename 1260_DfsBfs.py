@@ -42,6 +42,15 @@ def bfs(v):
         else:
             break
 
+def dfs(v):
+    visited[v] == True
+    print(v, end=' ')
+    temp = graph[v]
+    for i in temp:
+        if visited[i] == False:
+            dfs(i)
+
+dfs(root)
 bfs(root)
 
 
